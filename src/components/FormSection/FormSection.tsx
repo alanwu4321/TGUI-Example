@@ -1,7 +1,13 @@
-import styles from './FormSection.module.css';
+import styles from "./FormSection.module.css";
 
-import { ColorInput, IconContainer, Input, Section, Slider } from '@xelene/tgui';
-import { Icon24SunLow } from '@xelene/tgui/dist/icons/24/sun_low';
+import {
+  ColorInput,
+  IconContainer,
+  Input,
+  Section,
+  Slider,
+} from "@telegram-apps/telegram-ui";
+import { Icon24SunLow } from "@telegram-apps/telegram-ui/dist/icons/24/sun_low";
 
 export const FormSection = () => (
   <Section header="Form section">
@@ -9,12 +15,16 @@ export const FormSection = () => (
     <ColorInput />
     <Slider
       step={25}
-      before={(
+      before={
         <IconContainer className={styles.sliderIcon}>
           <Icon24SunLow />
         </IconContainer>
-      )}
-      after={<IconContainer><Icon24SunLow /></IconContainer>}
+      }
+      after={
+        <IconContainer>
+          <Icon24SunLow />
+        </IconContainer>
+      }
     />
   </Section>
 );

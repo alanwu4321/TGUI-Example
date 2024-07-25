@@ -1,5 +1,10 @@
-import styles from './ModalSection.module.css';
-import { Button, Modal, Placeholder, Section } from '@xelene/tgui';
+import styles from "./ModalSection.module.css";
+import {
+  Button,
+  Modal,
+  Placeholder,
+  Section,
+} from "@telegram-apps/telegram-ui";
 
 const PlaceholderImage = () => (
   <img
@@ -12,7 +17,11 @@ const PlaceholderImage = () => (
 const ModalWithTrigger = () => (
   <Modal
     header={<Modal.Header />}
-    trigger={<Button size="l" stretched>Open modal</Button>}
+    trigger={
+      <Button size="l" stretched>
+        Open modal
+      </Button>
+    }
   >
     <Placeholder
       header="This is nice modal, isn't it?"

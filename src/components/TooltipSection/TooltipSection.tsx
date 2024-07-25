@@ -1,7 +1,7 @@
-import { useRef, useState } from 'react';
-import styles from './TooltipSection.module.css';
+import { useRef, useState } from "react";
+import styles from "./TooltipSection.module.css";
 
-import { Banner, Button, Section, Tooltip } from '@xelene/tgui';
+import { Banner, Button, Section, Tooltip } from "@telegram-apps/telegram-ui";
 
 export const TooltipSection = () => {
   const ref = useRef(null);
@@ -19,14 +19,11 @@ export const TooltipSection = () => {
           className={styles.button}
           onClick={() => setShown(!shown)}
         >
-          {shown ? 'Hide' : 'Show'}
+          {shown ? "Hide" : "Show"}
         </Button>
       </Banner>
       {shown && (
-        <Tooltip
-          mode="dark"
-          targetRef={ref}
-        >
+        <Tooltip mode="dark" targetRef={ref}>
           Look in the mirror, you look so cute! Xx
         </Tooltip>
       )}

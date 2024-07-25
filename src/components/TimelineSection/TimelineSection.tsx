@@ -1,26 +1,26 @@
-import styles from './TimelineSection.module.css';
-import { Section, Timeline } from '@xelene/tgui';
+import styles from "./TimelineSection.module.css";
+import { Section, Timeline } from "@telegram-apps/telegram-ui";
 
 const TIMELINE_ITEMS = [
   {
-    header: 'Arrived',
-    description: 'Yesterday',
+    header: "Arrived",
+    description: "Yesterday",
   },
   {
-    header: 'Departed',
-    description: 'Today',
+    header: "Departed",
+    description: "Today",
   },
   {
-    header: 'In transit',
-    description: 'Tomorrow',
+    header: "In transit",
+    description: "Tomorrow",
   },
   {
-    header: 'Processed to delivery center',
-    description: 'Next week',
+    header: "Processed to delivery center",
+    description: "Next week",
   },
   {
-    header: 'Shipped',
-    description: 'Someday',
+    header: "Shipped",
+    description: "Someday",
   },
 ];
 
